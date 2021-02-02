@@ -1,0 +1,191 @@
+//The sizes and colors here are just for my reference, they can probably be removed
+$ec2021red: #8f1324 !default;
+$ec2021white: #fff !default;
+$ec2021black: #000 !default;
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+.ec2021DiversityJourney{
+    &__entry{
+        display: grid;
+        grid-template-columns: 1fr 25px 1fr 75px;
+      &Date{
+        font-size: 2rem;
+        grid-column: 1;
+        justify-self: end;
+        align-self: top;
+        border-left: 6px dashed $ec2021black;
+        font-weight: 2rem;
+      }
+      &Info{
+        font-size: 1rem;
+        grid-column: 3;
+        justify-content: start;
+      }
+      &Button{
+        font-size: .7rem;
+        padding: .5rem 1.5rem .5rem 1.5rem;
+        border-radius: 4px;
+        background-color: $ec2021red;
+        border: 1px solid $ec2021red;
+        color: $ec2021white;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        text-align: center;
+        grid-column: 3;
+      }
+    }
+}
+@media (min-width: $md){
+    .ec2021DiversityJourney{
+        &__entryRight{
+            grid-template-columns: 1fr 2fr 100px;
+        &Date{
+            justify-self: center;
+        }
+        &Info{
+            grid-column: 2;
+        }
+        &Button{
+            grid-column: 2;
+        }
+        }
+    }
+    &__entry{
+      grid-template-columns: 1fr 2fr 100px;
+  &Date{
+      justify-self: center;
+  }
+  &Info{
+      grid-column: 2;
+  }
+  &Button{
+      grid-column: 2;
+  }
+  }
+}
+
+.ec2021DiversityJourneyLine{
+  
+  &__entryLeft{
+    display: grid;
+    grid-template-columns: 100px 2fr 100px;
+   
+      &Date{
+        font-size: 2rem;
+        grid-column: 2;
+        justify-self: start;
+        align-self: top;
+        font-weight: 2rem;
+        border-left: 6px solid $ec2021black;
+        padding: 25px 0 10px 25px;
+
+      }
+      &Info{
+        font-size: 1rem;
+        grid-column: 2;
+        justify-content: start;
+        border-left: 6px solid $ec2021black;
+        padding: 0 0 10px 25px;
+      }
+      &Button{
+        font-size: .7rem;
+        padding: .5rem 1.5rem .5rem 1.5rem;
+        border-radius: 4px;
+        background-color: $ec2021red;
+        border: 1px solid $ec2021red;
+        color: $ec2021white;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        text-align: center;
+        grid-column: 2;
+        margin: 0px 75px 0 75px;
+
+      }
+  }
+    &__entryRight{
+      display: grid;
+      grid-template-columns: 100px 2fr 100px;
+      &Date{
+        font-size: 2rem;
+        grid-column: 2;
+        justify-self: start;
+        align-self: top;
+        border-left: 6px solid $ec2021black;
+        font-weight: 2rem;
+        padding: 25px 0 10px 25px;
+
+      }
+      &Info{
+        border-left: 6px solid $ec2021black;
+        font-size: 1rem;
+        grid-column: 2;
+        justify-content: start;
+        padding: 0 0 10px 25px;
+      }
+      &Button{
+        display: inline-block;
+        font-size: .7rem;
+        padding: .5rem 1.5rem .5rem 1.5rem;
+        border-radius: 4px;
+        background-color: $ec2021red;
+        border: 1px solid $ec2021red;
+        color: $ec2021white;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        text-align: center;
+        grid-column: 2;
+        align-content: center;
+        margin: 0px 75px 0 75px;
+      }
+    }
+    
+}
+@media (min-width: $md){
+  .ec2021DiversityJourneyLine{
+      &__entryLeft{
+        grid-template-columns: 75px 1fr 1fr 75px;
+      &Date{
+          justify-self: end;
+          grid-column: 2;
+          border-right: 6px solid $ec2021black;    
+          border-left: none;
+          padding: 25px 25px 10px 0;
+      }
+      &Info{
+          grid-column: 2;
+          border-right: 6px solid $ec2021black;    
+          border-left: none;
+          padding: 0 25px 10px 0;
+
+      }
+      &Button{
+          grid-column: 2;
+          border-left: none;
+      }
+    }
+  &__entryRight{
+      grid-template-columns: 75px 1fr 1fr 75px;
+
+  &Date{
+      justify-self: start;
+      grid-column: 3;
+      border-left: 6px solid $ec2021black;    
+
+  }
+  &Info{
+      grid-column: 3;
+      border-left: 6px solid $ec2021black;    
+
+  }
+  &Button{
+      grid-column: 3;
+
+  }
+  }
+  }
+}

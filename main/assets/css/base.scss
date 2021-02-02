@@ -1,0 +1,78 @@
+.newclass {
+    font-size: 96rems;
+}
+
+/* _row2ColPdf--mq */
+/*
+@media only screen and (min-width: 720px) {
+    //Default layout for row
+    .ec21row2ColPdf {
+
+        .rowContent {
+            grid-template-columns: 10vw minmax(auto, 15vw) minmax(auto, 65vw) 10vw;
+            //grid-template-rows: 1fr 1fr;
+            grid-column-gap: 15px;
+            grid-template-areas: ". rowText rowPdf ." ". rowCTA rowCTA .";
+
+            .rowText {
+                grid-row:1;
+                grid-column:2;
+            }
+            .rowMedia {
+                grid-row:1;
+                grid-column:3;
+            }
+        }
+    }
+    .ec21row2ColPdf__grid--pdfLeft {
+
+        .rowContent {
+            grid-template-columns: 10vw minmax(auto, 15vw) minmax(auto, 65vw) 10vw;
+            //grid-template-rows: 1fr 1fr;
+            grid-template-areas: ". rowPdf rowText ." ". rowCTA rowCTA .";
+            grid-column-gap: 15px;
+
+            .rowText {
+                grid-row:1;
+                grid-column:3;
+            }
+            .rowMedia {
+                grid-row:1;
+                grid-column:2;
+            }
+        }
+    }
+    .ec21row2ColPdf__grid--pdfRight {
+        
+        .rowContent {
+            grid-template-columns: 10vw minmax(auto, 65vw) minmax(auto, 15vw) 10vw;
+            //grid-template-rows: 1fr 1fr;
+            grid-template-areas: ". rowText rowPdf ." ". rowCTA rowCTA .";
+            grid-column-gap: 15px;
+
+            .rowText {
+                grid-row:1;
+                grid-column:2;
+            }
+            .rowMedia {
+                grid-row:1;
+                grid-column:3;
+            }
+        }
+    } 
+    $ec20red: #8f1324 !default;
+    $ec20black: #000 !default;
+    $ec20gray: #adadad !default;
+    $ec20gold: #cdb167 !default;
+    $ec20white: #fff !default;
+    
+    $ec21PdfBgtypes: ("red" $ec20red) ("black" $ec20black) ("gray" $ec20gray) ("gold" $ec20gold) ("white" $ec20white);
+    @each $whatever in $ec21PdfBgtypes {
+    $whatevername: nth($whatever, 1);
+    $whatevercolor: nth($whatever, 2);
+    .ec21row2ColPdf__bg--#{$whatevername} {
+        background-color:$whatevercolor;
+     }
+  }
+}
+*/
